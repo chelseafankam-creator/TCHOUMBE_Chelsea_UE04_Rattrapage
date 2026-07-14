@@ -14,91 +14,159 @@ body{
 
 /* HEADER */
 
+ 
 header{
+    position:absolute;
+    top:0;
+    left:0;
     width:100%;
-    background:white;
-    border-bottom:1px solid #e5e5e5;
+    z-index:100;
+    background:transparent;
 }
-
- nav{
-    max-width:1400px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 60px;
+ nav {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;
+    align-items: center;  
+    padding: 10px 70px;
+    justify-content: space-between;  
 }
-.logo img{
-    width:120px;
+  .logo{
+    flex:0 0 auto;
+}
+ .logo img{
+    width:105px;
     display:block;
 }
- .menu{
+ .nav-center{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+} 
+.menu{
     display:flex;
     list-style:none;
-    gap:45px;
+    gap:35px;
 }
-
 .menu a{
+    position:relative;
     text-decoration:none;
-    color:#222;
-    font-size:15px;
+    color:#ffffff;
+    font-size:12px;
     font-weight:500;
     letter-spacing:1px;
-    transition:0.3s;
+    padding-bottom:12px;
 }
 
-.menu a:hover{
-    color:#36e0c2;
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:3px;
+    background:#12e1bb;
+    opacity:0;
 }
- .buttons{
+
+.menu a:hover::after{
+    opacity:1;
+}
+.buttons{
     display:flex;
-    gap:15px;
+    align-items:center;
+    gap:18px;
 }
 
 .btn-primary,
 .btn-secondary{
-    padding:16px 28px;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.btn-primary{
-    background:#36e0c2;
-    color:#000;
-}
-
-.btn-secondary{
-    border:1px solid #000;
-    color:#000;
-}
-
-.btn-primary:hover{
-    opacity:0.9;
-}
-
-.btn-secondary:hover{
-    background:#000;
-    color:#fff;
-}
-/* HERO */
-
-.hero{
-    height:650px;
     display:flex;
     align-items:center;
+    justify-content:center;
+    height:56px;
+    padding: 0 20px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:0.3s;
 }
+.btn-primary{
+    background:#36e0c2;
+    color:#111;
+    border:1px solid #36e0c2;
+}
+.btn-primary:hover{
+    background:white;
+    color:#000000;
+}
+.btn-secondary{
+    background:transparent;
+    color:#ffffff;
+    border:1px solid #ffffff;
+}
+.btn-secondary:hover{
+    background:#111;
+    color:white;
+    border-color: #000000;
+}
+  .btn-primary,
+.btn-secondary{
+    width:150px;
+    height:50px;
+}
+ 
+ 
+ .hero{
+    height:500px;
+     background-image: url("../assets/images/hero.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
+    display:flex;
+    align-items:center;
+
+    position:relative;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
 .overlay{
+    position:relative;
+    z-index:2;
+
     width:100%;
     padding-left:120px;
-}
 
-.overlay p{
-    font-size:18px;
+    color:white;
+}
+ .overlay p{
+    color:rgb(255, 255, 255);
+    font-size:16px;
     margin-bottom:20px;
 }
 
-.overlay h1{
-    font-size:64px;
-    font-weight:700;
+.overlay h1 {
+    color: white;
+    font-size: 58px;         
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+   .event {
+     
+    color: #25e3c5;      
+    font-size: 13px;     
+    font-weight: 200;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.buttons {
+    display: flex;
+    gap: 18px;
+    margin-left: auto; 
 }
