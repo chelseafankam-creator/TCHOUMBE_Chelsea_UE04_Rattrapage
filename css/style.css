@@ -195,7 +195,7 @@ header.scrolled .logo-black{
     content:"";
     position:absolute;
     left:0;
-    bottom:0;
+    bottom: -8px;;
   
     width:100%;
     height:3px;
