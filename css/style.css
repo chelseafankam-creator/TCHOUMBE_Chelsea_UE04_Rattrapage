@@ -335,13 +335,7 @@ header:hover .btn-secondary:hover{
     text-decoration: underline;
 }
 
-.inline-link:hover {
-    color: #36e0c2;
-}
- 
-.ranking-block {
-    margin-top: 45px;
-}
+
 
 .ranking-block h3 {
     font-size: 24px;
@@ -354,8 +348,36 @@ header:hover .btn-secondary:hover{
     color: #20e3c4;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 10px;
     transition: 0.2s;
 }
+.story-future {
+    width: 100%;
+    margin-top: 60px;
+}
 
+.story-future h2 {
+    font-size: 28px;
+    color: #111111;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.future-media {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.future-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.future-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 25px;
+}
