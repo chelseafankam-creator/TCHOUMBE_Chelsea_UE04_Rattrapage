@@ -640,9 +640,6 @@ header:hover .btn-secondary:hover{
     margin-top: 10px;
 }
 
-.info-link:hover {
-    color: #00b392;
-}
 
 
 .event-card {
@@ -719,6 +716,3 @@ header:hover .btn-secondary:hover{
     transition: color 0.2s ease;
 }
 
-.event-register:hover {
-    color: #00e5bc;
-}
