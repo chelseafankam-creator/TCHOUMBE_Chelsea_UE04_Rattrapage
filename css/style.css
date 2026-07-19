@@ -966,3 +966,227 @@ header:hover .btn-secondary:hover{
     font-size: 24px;
     cursor: pointer;
 }
+ .burger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    header {
+        position: fixed;
+        background: transparent;
+        transition: background 0.3s;
+    }
+
+    header.scrolled, header:hover {
+        background: #ffffff !important;
+    }
+
+    nav {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    .burger-bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: 0.3s;
+    }
+
+    header.scrolled .burger-bar, header:hover .burger-bar {
+        background-color: #111111;
+    }
+
+    .nav-center {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+        order: 3;
+        padding-top: 15px;
+        background: #ffffff;
+    }
+
+    .nav-center.active {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .menu a {
+        color: #222222 !important;
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .event {
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    .buttons {
+        display: flex !important;
+        margin: 0 auto 0 auto;
+        gap: 8px;
+        background: transparent;
+        padding: 0;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 105px;
+        height: 38px;
+        font-size: 11px;
+    }
+ 
+
+    .btn-secondary {
+        color: #222222 !important;
+        border-color: #222222 !important;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .overlay {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 32px;
+    }
+
+    .content-section {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .intro-block h2 {
+        font-size: 28px;
+    }
+
+    .columns-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .column-left h3, .column-right h3 {
+        font-size: 26px;
+    }
+
+    .admission-section {
+        padding: 50px 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+    }
+
+    .admission-container {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .admission-title-col {
+        width: 100%;
+    }
+
+    .admission-title-col h2 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+
+    .admission-steps-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .step-item.has-line::before {
+        display: none;
+    }
+
+    .info-container, .news-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .info-col h3 {
+        min-height: auto;
+    }
+
+    .footer-top, .footer-middle {
+        flex-direction: column;
+        gap: 35px;
+        padding: 0 20px;
+    }
+
+    .footer-logo-col, .footer-rdv-col, .footer-contact-col, .footer-links-section, .qualiopi-block {
+        width: 100%;
+    }
+
+    .rdv-content {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .links-columns-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qualiopi-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .copyright-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        padding: 20px 20px 15px 20px;
+    }
+}
