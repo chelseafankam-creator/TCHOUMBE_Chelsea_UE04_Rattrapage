@@ -440,7 +440,7 @@ header:hover .btn-secondary:hover{
 }
 
 .tag-green {
-    display: table; /* Force l'élément à se comporter comme un bloc ajusté à son texte */
+    display: table;
     background-color: #00e5bc;
     color: #111111;
     font-size: 12px;
